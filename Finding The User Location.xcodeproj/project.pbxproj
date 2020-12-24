@@ -13,6 +13,7 @@
 		2C40ED552594EC300084D185 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40ED532594EC300084D185 /* Main.storyboard */; };
 		2C40ED572594EC330084D185 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C40ED562594EC330084D185 /* Assets.xcassets */; };
 		2C40ED5A2594EC330084D185 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C40ED582594EC330084D185 /* LaunchScreen.storyboard */; };
+		2C40ED652594ECA60084D185 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2C40ED642594ECA60084D185 /* CoreLocation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		2C40ED562594EC330084D185 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C40ED592594EC330084D185 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2C40ED5B2594EC330084D185 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2C40ED642594ECA60084D185 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +33,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2C40ED652594ECA60084D185 /* CoreLocation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +45,7 @@
 			children = (
 				2C40ED4C2594EC300084D185 /* Finding The User Location */,
 				2C40ED4B2594EC300084D185 /* Products */,
+				2C40ED632594ECA60084D185 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +69,14 @@
 				2C40ED5B2594EC330084D185 /* Info.plist */,
 			);
 			path = "Finding The User Location";
+			sourceTree = "<group>";
+		};
+		2C40ED632594ECA60084D185 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2C40ED642594ECA60084D185 /* CoreLocation.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -296,7 +308,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.SergeyGolenko.MyLocationsApp.Finding-The-User-Location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -315,7 +327,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.swift.SergeyGolenko.MyLocationsApp.Finding-The-User-Location";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

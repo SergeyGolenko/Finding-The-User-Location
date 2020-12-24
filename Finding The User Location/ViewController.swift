@@ -7,9 +7,11 @@
 
 import UIKit
 import CoreLocation
+import MapKit
 
 class ViewController: UIViewController,CLLocationManagerDelegate {
     
+    @IBOutlet weak var map: MKMapView!
     var locationManager = CLLocationManager()
 
     override func viewDidLoad() {
@@ -20,8 +22,12 @@ class ViewController: UIViewController,CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
+    
+    
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print(locations)
+        let user: CLLocation = locations[0]
+        let latitude = user.coordinate.latitude
+        let longitude = user.coordinate.longitude
     }
 
 
